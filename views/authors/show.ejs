@@ -1,5 +1,5 @@
 <h2><%= author.name %> </h2>
-<a href="/author/<%= author.id %>/edit">Edit</a>
+<a href="/authors/<%= author.id %>/edit">Edit</a>
 <%- include('../partials/deleteForm', { url: `/authors/${author.id}`}) %> 
 
 <% if (booksByAuthor.length > 0) { %>
